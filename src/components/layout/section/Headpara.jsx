@@ -2,7 +2,7 @@ import React from "react";
 
 function Headpara() {
   return (
-    <section className="h-[250px] w-full flex flex-col items-center justify-center text-center">
+    <section className="h-[250px] w-full flex flex-col items-center justify-center text-center ">
       <h2 className="mb-2">
        <svg
             xmlns="http://www.w3.org/2000/svg"

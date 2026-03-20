@@ -1,14 +1,12 @@
-import { useState } from "react";
-import Header from "./components/layout/Header/Header";
-import Footer from "./components/layout/Footer/Footer";
+import { Route,Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <>
-      <div className="w-screen h-fit">
-        <Header/>
-        <Footer/>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }

@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import NameIconbtn from "../../Button/NameIconbtn";
 import Dropdown from "../../menu/Dropdown";
+import Sidemenu from "../../menu/Sidemenu";
 
 function Header() {
-      const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <>
-      <div className=" w-full flex h-[50px] justify-between items-center px-40  py-10  ">
+      <div className="w-full flex h-15 justify-between items-center px-4 py-10 lg:px-20 lg:py-10">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +23,7 @@ function Header() {
             />
           </svg>
         </div>
-        <nav className="w-full hidden lg:flex flex-1 justify-center">
+        <nav className="hidden lg:flex flex-1 justify-center">
           <ul className="flex gap-10 justify-center items-center">
             <li>
               <Dropdown />
@@ -45,9 +46,9 @@ function Header() {
           </ul>
         </nav>
 
-        <div>
+        <div className="flex items-center gap-4">
           <NameIconbtn
-            className="bg-[#EEEFEF] "
+            className="bg-[#EEEFEF] px-4 py-2 ro"
             name="Logout"
             icon={
               <svg
@@ -56,77 +57,25 @@ function Header() {
                 height="20"
                 viewBox="0 0 20 20"
                 fill="none"
-                class=""
               >
                 <path
                   d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5M8.33333 14.1667L12.5 10M12.5 10L8.33333 5.83333M12.5 10H2.5"
                   stroke="#5A6475"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             }
           />
+          <button className="lg:hidden text-2xl" onClick={() => setOpen(true)}>
+            ☰
+          </button>
         </div>
-
-        <button className="lg:hidden text-2xl" onClick={() => setOpen(true)}>
-          ☰
-        </button>
       </div>
       {/* SIDE MENU (MOBILE + TABLET) */}
-      <div
-        className={`w-screen fixed top-0 right-0 h-full w-[260px] bg-white shadow-lg transform transition-transform duration-300 z-50 
-        ${open ? "translate-x-0" : "translate-x-full"}`}
-      >
-        {/* CLOSE */}
-        <div className="flex justify-end p-4">
-          <button onClick={() => setOpen(false)}>✕</button>
-        </div>
-
-        {/* MENU */}
-        <ul className="flex flex-col gap-6 p-6 text-lg">
-          <li>Dropdown</li>
-          <li>
-            <NavLink to="/banking" onClick={() => setOpen(false)}>
-              Banking
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/processing" onClick={() => setOpen(false)}>
-              Processing
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" onClick={() => setOpen(false)}>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/career" onClick={() => setOpen(false)}>
-              Career
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" onClick={() => setOpen(false)}>
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-
-        {/* LOGOUT */}
-        <div className="p-6">
-          <button className="w-full bg-gray-200 py-2 rounded">Logout</button>
-        </div>
-      </div>
-
-      {/* OVERLAY */}
-      {open && (
-        <div
-          className="fixed inset-0 bg-black/40 z-40"
-          onClick={() => setOpen(false)}
-        />
-      )}
+      <Sidemenu open={open} setOpen={setOpen} />
+    
     </>
   );
 }
