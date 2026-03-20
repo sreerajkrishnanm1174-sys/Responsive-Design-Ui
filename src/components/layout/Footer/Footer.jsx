@@ -4,7 +4,7 @@ import FooterLink from "../../Link/FooterLink";
 
 function Footer() {
   return (
-    <footer className="bg-white text-black p-5 mt-10 h-fit">
+    <footer className="bg-white text-black p-5 mt-30 h-fit">
       <Headpara />
       {/* Bottom Section */}
 
