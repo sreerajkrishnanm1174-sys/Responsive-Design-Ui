@@ -9,7 +9,7 @@ import Section_5 from "./Section_5";
 
 function Body() {
   return (
-    <div className="   h-fit  w-full pt-10 lg:px-20 flex flex-col items-center justify-center gap-10">
+    <div className="   h-fit  w-full p-20 lg:px-20 flex flex-col items-center justify-center gap-10">
       <Herosection />
       <Brandssection />
       <Section_1/>
