@@ -1,5 +1,6 @@
 import React from "react";
 import NameIconbtn from "../../Button/NameIconbtn";
+import RIghtArrow from "../../Icons/RIghtArrow";
 
 function Herosection() {
   return (
@@ -13,7 +14,7 @@ function Herosection() {
             Seamless experience
           </p>
           <h1
-            className="text-6xl font-manrope font-semibold mb-6 "
+            className="text-[62px] font-manrope font-semibold line-height-1 mb-5"
             style={{ fontFamily: "Manrope, sans-serif" }}
           >
             Unleashing the Next Generation of Card Solutions
@@ -28,21 +29,7 @@ function Herosection() {
           <div className=" flex flex-col items-center justify-center mt-10">
             <NameIconbtn
               icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                >
-                  <path
-                    d="M1 6.83333H12.6667M12.6667 6.83333L6.83333 1M12.6667 6.83333L6.83333 12.6667"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+               <RIghtArrow/>
               }
               name="Unlock your Card"
               className="bg-[#582066] px-4 py-2 text-amber-50"
