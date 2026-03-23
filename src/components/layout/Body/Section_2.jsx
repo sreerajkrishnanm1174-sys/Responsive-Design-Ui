@@ -23,16 +23,16 @@ function Section_2(props) {
         />
         <br />
         <br />
-        <Cards items-center justify-center>
+        <Cards className=" items-center justify-center ">
           <ImgCard_2
             src="Images/mobile.png"
             alt="Mobile"
-            className="bg-[#FAF9FF] px-10 pt-10 lg:px-10 lg:pt-20  flex-1 "
+            className="bg-[#bcb2ef6b] px-10 pt-10 lg:px-10 lg:pt-20  flex-1 "
           />
           <ImgCard_2
             src="Images/spending.png"
             alt="Spending"
-            className="bg-[#FAF9FF] px-10 py-10 lg:p-10 lg:py-20 flex-1"
+            className="bg-[#bcb2ef6b] px-10 py-10 lg:p-10 lg:py-20 flex-1"
           />
         </Cards>
       </MainSection>
