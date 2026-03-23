@@ -7,7 +7,7 @@ function Footer() {
     <footer className="bg-white text-black p-5 h-fit">
       <Headpara
         sectionClassName="w-full"
-        headingClassName="text-lg font-bold"
+        headingClassName="text-lg font-bold "
         description="We build modern web applications with scalable and efficient solutions."
         heading={
           <svg
