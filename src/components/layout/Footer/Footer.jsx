@@ -4,7 +4,7 @@ import FooterLink from "../../Link/FooterLink";
 
 function Footer() {
   return (
-    <footer className="bg-white text-black p-5 mt-10 h-fit">
+    <footer className="bg-white text-black p-5 h-fit">
       <Headpara
         sectionClassName="w-full"
         headingClassName="text-lg font-bold"
@@ -26,7 +26,7 @@ function Footer() {
       />
       {/* Bottom Section */}
 
-      <div className="  w-full space-y-6  lg:flex lg:justify-center">
+      <div className=" mt-20 w-full space-y-6  lg:flex lg:justify-center">
         {/* 3 Columns */}
         <div className="border-t-2  border-gray-300 pt-20 pl-8 grid grid-rows-5 lg:gap-30 text-start  lg:grid-cols-5 lg:grid-rows-1 md:grid-cols-2 ">
           <div>
