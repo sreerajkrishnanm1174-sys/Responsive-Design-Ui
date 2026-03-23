@@ -16,7 +16,7 @@ function Section_1() {
           <NameIconbtn
             name="Compare all Pro features"
             icon={<RIghtArrow />}
-            className="text-purple-900 px-4 py-2 font-semibold"
+            className="text-purple-900 px-4 py-2 font-semibold text-[18px] "
           />
         }
       />

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Brandsdiv() {
+function Brandsection() {
   return (
     <>
       <div className="container mx-auto h-fit grid grid-rows-2 grid-cols-4 py-10 lg:py-20 lg:grid-cols-8 gap-5 items-center justify-center md:flex md:flex-wrap md:gap-10">
@@ -33,4 +33,4 @@ function Brandsdiv() {
   );
 }
 
-export default Brandsdiv;
+export default Brandsection;

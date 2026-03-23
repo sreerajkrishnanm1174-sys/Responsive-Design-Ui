@@ -10,7 +10,7 @@ function Headpara_2(props) {
         {props.head}
       </h1>
       <p
-        className="text-sm lg:text-xl md:text-xl text-gray-600"
+        className="text-[18px] lg:text-xl md:text-xl text-gray-600"
         style={{ fontFamily: "Inter, sans-serif" }}
       >
         {props.para}
