@@ -5,7 +5,7 @@ import Cards from "../../Cards/Cards";
 import ImgCard from "../../Cards/ImgCard";
 import Rating from "../../Icons/Rating";
 
-function Section_4() {
+function Testimonial() {
   return (
     <>
       <MainSection>
@@ -32,7 +32,7 @@ function Section_4() {
             </svg>
           }
           description="I had the pleasure of experiencing the next generation of card solutions with this incredible product. It's refreshing to see such innovation in the financial industry."
-          descriptionClassName="text-gray-800 text-sm md:text-3xl lg:text-3xl  max-w-3xl"
+          descriptionClassName="text-[#5A6475] text-gray-800 text-[20px] leading-[24px] md:text-[32px] lg:leading-[40-px] md:leading-[40px]  lg:text-[32px]   max-w-3xl"
         />
 
         <Cards className=" items-center justify-center ">
@@ -41,8 +41,8 @@ function Section_4() {
             src="/Images/profile.jpg"
             heading="Nick Babich"
             description="Lead Designer"
-            headingClassName="text-xl font-semibold mb-2"
-            descriptionClassName="text-gray-600"
+            headingClassName="text-[16px] leading-[20px]  font-semibold mb-2"
+            descriptionClassName=" text-[14px] leading-[20px] text-[#5A6475]"
           >
             <div>
                 <Rating />
@@ -54,4 +54,4 @@ function Section_4() {
   );
 }
 
-export default Section_4;
+export default Testimonial;

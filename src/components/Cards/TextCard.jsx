@@ -4,12 +4,12 @@ function TextCard({ heading_1, heading_2, description, classNameheading_1, class
   return (
     <div className="p-10 max-w-100 h-fit flex  flex-col items-center text-center gap-2">
         <div>
-            <h1 className={classNameheading_1 || 'text-xl text-semibold mb-5'}>{heading_1}</h1>
+            <h1 className={classNameheading_1 || 'text-xl text-semibold mb-5'} style={{ fontFamily: "Manrope, sans-serif" }}>{heading_1}</h1>
             
         </div>
         <div>
             <h1 className={classNameheading_2 || 'text-xl text-semibold mb-5'}>{heading_2}</h1>
-            <p className={classNamedescription || 'text-gray-600 text-[16px] '}>{description}</p>
+            <p className={classNamedescription || 'text-[#5A6475] text-[16px] leading-[28px] '}>{description}</p>
         </div>
     </div>
   )

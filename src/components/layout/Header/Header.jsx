@@ -9,7 +9,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <header className=" sticky top-0 z-50 text-[12px]  bg-white max-w-full flex h-15 justify-between items-center px-4 py-10 lg:px-20 lg:py-10 border-b border-gray-300 border-t-2"> 
+      <header className=" sticky top-0 z-50 text-[12px]  bg-white max-w-full flex h-15 justify-between items-center px-4 py-10 lg:px-20 lg:py-10  border-b-[1px] border-[#E6E7E9] border-t-[1px]"> 
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
