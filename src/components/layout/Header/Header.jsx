@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 import NameIconbtn from "../../Button/NameIconbtn";
 import Dropdown from "../../menu/Dropdown";
 import Sidemenu from "../../menu/Sidemenu";
+import AnnouncementArea from "../section/AnnouncementArea";
 
 function Header() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="w-full flex h-15 justify-between items-center px-4 py-10 lg:px-20 lg:py-10">
+      <header className=" sticky top-0 z-50 text-[12px]  bg-white max-w-full flex h-15 justify-between items-center px-4 py-10 lg:px-20 lg:py-10  border-b-[1px] border-[#E6E7E9] border-t-[1px]"> 
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +25,7 @@ function Header() {
           </svg>
         </div>
         <nav className="hidden lg:flex flex-1 justify-center">
-          <ul className="flex gap-10 justify-center items-center">
+          <ul className="flex gap-10 justify-center items-center text-[16px]">
             <li>
               <Dropdown />
             </li>
@@ -48,7 +49,7 @@ function Header() {
 
         <div className="flex items-center gap-4">
           <NameIconbtn
-            className="bg-[#EEEFEF] px-4 py-2 ro"
+            className="bg-[#EEEFEF] px-[16px] py-[8px] rounded-[8px]"
             name="Logout"
             icon={
               <svg
@@ -72,7 +73,7 @@ function Header() {
             ☰
           </button>
         </div>
-      </div>
+      </header>
       {/* SIDE MENU (MOBILE + TABLET) */}
       <Sidemenu open={open} setOpen={setOpen} />
     
