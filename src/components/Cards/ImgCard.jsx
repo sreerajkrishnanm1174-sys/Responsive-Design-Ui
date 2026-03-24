@@ -7,8 +7,8 @@ function ImgCard({ src, alt, heading, description ,imageDivClassName,headingClas
             <img src={src} alt={alt} className={imageDivClassName || 'w-auto h-auto '}   />
         </div>
         <div>
-            <h1 className={headingClassName || 'text-xl text-semibold mb-2'}>{heading}</h1>
-            <p className={descriptionClassName || 'text-gray-600'}>{description}</p>
+            <h1 className={headingClassName || 'text-[16px] font-medium mb-2'}>{heading}</h1>
+            <p className={descriptionClassName || 'text-gray-600 font-medium text-[14px] leading-[28px]'}>{description}</p>
         </div>
         {children}
     </div>

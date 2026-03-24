@@ -6,7 +6,7 @@ import NameIconbtn from "../../Button/NameIconbtn";
 import RIghtArrow from "../../Icons/RIghtArrow";
 import MainSection from "../section/MainSection";
 
-function Section_2(props) {
+function Features_Section(props) {
   return (
     <>
       <MainSection>
@@ -17,22 +17,22 @@ function Section_2(props) {
             <NameIconbtn
               name="Compare all Pro features"
               icon={<RIghtArrow />}
-              className="text-purple-900 px-4 py-2 font-semibold"
+              className="text-[#582066] px-4 py-2  text-[16px] leading-[20px]"
             />
           }
         />
         <br />
         <br />
-        <Cards className=" items-center justify-center ">
+        <Cards className=" items-center justify-center gap-[32px]">
           <ImgCard_2
             src="Images/mobile.png"
             alt="Mobile"
-            className="bg-[#bcb2ef6b] px-10 pt-10 lg:px-10 lg:pt-20  flex-1 "
+            className="bg-[#bcb2ef6b] max-w-[592px] h-[490px] px-10 pt-10 lg:px-10 lg:pt-10  flex-1 "
           />
           <ImgCard_2
             src="Images/spending.png"
             alt="Spending"
-            className="bg-[#bcb2ef6b] px-10 py-10 lg:p-10 lg:py-20 flex-1"
+            className="bg-[#bcb2ef6b] max-w-[592px] h-[490px] px-13 py-13 lg:p-25  flex-1"
           />
         </Cards>
       </MainSection>
@@ -40,4 +40,4 @@ function Section_2(props) {
   );
 }
 
-export default Section_2;
+export default Features_Section;
